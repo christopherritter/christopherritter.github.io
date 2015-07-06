@@ -1,6 +1,7 @@
 body {
     background-color: rgb(218, 215, 198);
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
     line-height: 1.4em;
 }
 
@@ -13,14 +14,13 @@ body {
     float: left;
     height: auto;
     width: 500px;
-    background-color: rgba(255, 255, 255, 0.921569);
+    background-color: rgba(255, 255, 255, .9);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     position: relative;
     top: 0px;
-    left: 1%;
     z-index: 20;
     clear: none;
     display: block;
@@ -31,21 +31,14 @@ body {
 #headline {
     float: left;
     font-size: 4.5em;
-    text-align: left;
     font-weight: normal;
-    line-height: normal;
+    line-height: 1em;
     color: rgb(35, 31, 32);
-    font-style: normal;
-    letter-spacing: normal;
-    text-decoration: none;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     position: relative;
-    top: 0px;
-    left: 0px;
-    margin: 0px;
     clear: right;
-    max-width: none;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 #byline {
@@ -70,6 +63,8 @@ body {
 
 #divider {
     display: block;
+    width: 45%;
+    height: auto;
     clear: both;
     margin-left: auto;
     margin-right: auto;
@@ -95,6 +90,35 @@ body {
     font-weight: 700;
 }
 
+.bold {
+    color: rgb(35, 31, 32);
+    font-weight: bold;
+}
+
+#normal {
+    float: none;
+    font-size: 1.125em;
+    line-height: normal;
+    color: rgb(35, 31, 32);
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    font-family: source-sans-pro;
+}
+
+#link {
+    float: none;
+    font-size: 1.125em;
+    line-height: normal;
+    color: rgb(194, 80, 69);
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    font-family: source-sans-pro;
+}
+
 #download {
     text-align: center;
     margin-bottom: 24px;
@@ -108,6 +132,7 @@ body {
 #download a {
     color: rgb(121, 158, 164);
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    white-space: nowrap;
 }
 
 #download a:hover {
@@ -116,7 +141,7 @@ body {
 
 #links {
     float: left;
-    height: 100px;
+    height: 106px;
     box-sizing: border-box;
     width: 100%;
     background-color: rgb(189, 184, 165);
@@ -173,70 +198,69 @@ body {
     list-style-type: none;
 }
 
-h3 {
+#head {
     float: left;
-    font-size: 3em;
-    width: auto;
-    height: auto;
-    text-align: left;
-    font-weight: bold;
-    line-height: normal;
-    color: rgb(194, 80, 71);
-    font-style: normal;
-    letter-spacing: normal;
-    text-decoration: none;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    z-index: 16;
-    margin: 0px 0px 12px;
-    clear: right;
+    width: 70%;
     max-width: none;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 15%;
+    z-index: 8;
+    clear: none;
+    display: block;
     padding: 0px;
-}
-
-h3 + p {
-    float: left;
-    margin-bottom: 24px;
+    min-width: 0px;
+    bottom: auto;
+    right: auto;
 }
 
 #thoughts {
-    overflow: hidden;
-    min-height: 100%;
+    float: left;
+    height: auto;
+    clear: none;
+    width: 60%;
+    min-height: 0px;
     position: fixed;
     z-index: 10;
     top: 48px;
-    left: 548px;
+    left: auto;
     right: 0px;
-}
-
-#head {
-    width: 406px;
-    height: 584px;
-    display: block;
-    position: fixed;
-    top: 134px;
-    left: 55%;
-    transform: translate(48px, 0);
+    bottom: auto;
 }
 
 #thoughtsL {
-    width: 341px;
-    height: 744px;
+    float: left;
+    width: 50%;
+    max-width: none;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: -48px;
+    left: -15%;
+    z-index: 11;
+    clear: none;
     display: block;
-    position: fixed;
-    left: 47%;
-    z-index: 15;
+    padding-left: 0px;
+    right: auto;
+    bottom: auto;
 }
 
 #thoughtsR {
-    width: 371px;
-    height: 738px;
+    float: left;
+    width: 50%;
+    max-width: none;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: -48px;
+    left: 70%;
+    z-index: 10;
+    clear: none;
     display: block;
-    position: fixed;
-    left: 75%;
-    z-index: 15;
+    right: auto;
+    bottom: auto;
 }
 
 #parallax {
@@ -250,44 +274,173 @@ h3 + p {
 }
 
 #parallax1L {
-    width: 410px;
-    height: 609px;
-    position: fixed;
-    top: 125px;
-    left: 38%;
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 168px;
+    left: 29%;
 }
 
 #parallax1R {
-    width: 186px;
-    height: 823px;
-    position: fixed;
-    top: 0px;
-    left: 84%;
+    width: 25%;
+    height: auto;
+    position: absolute;
+    top: -170px;
+    right: 2.5%;
 }
 
-#parallax2L {
-    width: 397px;
-    height: 723px;
-    position: fixed;
-    top: 0px;
-    left: -8%;
+#parallax2L {;
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: -64px;
+    left: -16.4%;
 }
 
 #parallax2R {
-    width: 391px;
-    height: 768px;
-    position: fixed;
-    top: -240px;
-    left: auto;
-    right: -10%;
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: -265px;
+    right: -24%;
 }
 
-@media only screen and (max-width: 660px) {
+#header {
+    float: left;
+    font-size: 0.8em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1em;
+    margin: 0px 0px 6px;
+    clear: none;
+    min-height: 0px;
+    min-width: 0px;
+    z-index: 19;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1024px) {
+    #head {
+        left: 21%;
+        right: auto;
+        width: 90%;
+    }
+
+    #thoughtsL {
+        left: -4.8%;
+        right: auto;
+        width: 60%;
+    }
+
+    #thoughtsR {
+        left: 79.9%;
+        right: auto;
+        width: 60%;
+        display: none;
+    }
+
+    #parallax1R {
+        left: auto;
+        bottom: auto;
+        top: -298px;
+        right: 2.5%;
+    }
+
+    #parallax2L {
+        width: 60%;
+        left: -17%;
+        right: auto;
+        top: -52px;
+        bottom: auto;
+        display: block;
+    }
+
+    #parallax1L {
+        left: 34.7%;
+        right: auto;
+        display: block;
+        width: 50%;
+    }
+
+    #parallax2R {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #head {
+        left: 38.6%;
+        right: auto;
+        width: 120%;
+    }
+
+    #thoughtsL {
+        left: 8.6%;
+        right: auto;
+        width: 80%;
+    }
+
+    #thoughtsR {
+        left: 100.3%;
+        right: auto;
+        display: none;
+    }
+
+    #parallax2R {
+        display: none;
+    }
+
+    #parallax1R {
+        display: none;
+        left: auto;
+        bottom: auto;
+    }
+
+    #parallax2L {
+        width: 80%;
+        left: -25.7%;
+        right: auto;
+    }
+
+    #parallax1L {
+        width: 50%;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 546px) {
+    #overlay {
+        width: auto;
+        min-width: 300px;
+    }
+
     .primaryContainer {
         padding: 24px;
     }
-    
-    #overlay {
-        width: auto;
+
+    #head {
+        width: 150%;
+        left: 20.3%;
+        right: auto;
+    }
+
+    #thoughtsL {
+        width: 100%;
+        left: -9.6%;
+        right: auto;
+    }
+
+    #parallax1L {
+        left: 5%;
+        right: auto;
+    }
+
+    #parallax2L {
+        left: -33%;
+        right: auto;
+        width: 100%;
     }
 }
+
