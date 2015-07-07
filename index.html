@@ -1,41 +1,111 @@
 <!DOCTYPE html>
 <html>
+    
     <head>
         <title>Christopher Ritter, UX/UI Designer</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
         <link rel="stylesheet" href="css/boilerplate.css">
         <link rel="stylesheet" href="css/main.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
+        <script>
+            function parallax() {
+                var parallax1L = document.getElementById('parallax1L');
+                var parallax1R = document.getElementById('parallax1R');
+                var parallax2L = document.getElementById('parallax2L');
+                var parallax2R = document.getElementById('parallax2R');
+                
+                parallax1L.style.top = -(window.pageYOffset / 8) + 125 + 'px';
+                parallax1R.style.top = -(window.pageYOffset / 8) + 'px';
+                parallax2L.style.top = (window.pageYOffset / 10) + 'px';
+                parallax2R.style.top = (window.pageYOffset / 10) - 240 + 'px';
+            }
+            
+            window.addEventListener("scroll", parallax, false);
+        </script>
     </head>
     <body>
+
     <main id="primaryContainer" class="primaryContainer clearfix">
-        <article id="overlay" class="clearfix">
-            <h1 id="headline">Christopher Ritter</h1>
-            <h2 id="byline">UX&#x2f;UI Designer</h2>
-            <img id="divider" src="img/divider.svg" class="image" />
-            <p id="biography"><span class="bold">UX&#x2f;UI Designer</span> providing end-to-end design solutions, from brainstorms and wireframes, to prototypes and production-ready assets that support product development. Possesses practical knowledge of working with waterfall and Agile development teams. Applies user-centered design and design thinking in order to connect customer needs with business objectives. Passionate about innovation and thrives in creative environments.</p>
-            <p id="biography"><span class="bold">Core competencies include&#058;</span> Brainstorms, Wireframes, Sitemaps, Workflows, Iconography, Design Compositions, UI Specifications, Prototypes, Discussion Guides, Concept Tests, Synthesis Reports, and Stakeholder Presentations.</p>
-            <p id="download"><a href="doc/Christopher-Ritter_Resume_051015.docx">Download Resume</a> &amp; <a href="doc/Christopher-Ritter_UX-Portfolio.pdf">UX Portfolio</a></p>
-            <ul id="links" class="clearfix">
-                <lh>Social Media Channels</lh>
-                <li id="linkedin"><a href="https://www.linkedin.com/in/christopherritter" target="_blank">LinkedIn</a></li>
-                <li id="pinterest"><a href="https://www.pinterest.com/chrisritter/" target="_blank">Pinterest</a></li>
-                <li id="twitter"><a href="https://twitter.com/geddon" target="_blank">Twitter</a></li>
-                <li id="facebook"><a href="https://www.facebook.com/christopherritter" target="_blank">Facebook</a></li>
-            </ul> 
+        
+        <article class="clearfix">
+            <div id="overlay" class="clearfix">
+                <h1 id="headline">Christopher Ritter</h1>
+                <h2 id="byline">UX&#x2f;UI Designer</h2>
+                <img id="divider" src="img/divider.svg" class="image" />
+                <p id="biography"><span class="bold">UX&#x2f;UI Designer</span> providing end-to-end design solutions, from brainstorms and wireframes, to prototypes and production-ready assets that support product development. Possesses practical knowledge of working with waterfall and Agile development teams. Applies user-centered design and design thinking in order to connect customer needs with business objectives. Passionate about innovation and thrives in creative environments.</p>
+                <p id="biography"><span class="bold">Core competencies include&#058;</span> Brainstorms, Wireframes, Sitemaps, Workflows, Iconography, Design Compositions, UI Specifications, Prototypes, Discussion Guides, Concept Tests, Synthesis Reports, and Stakeholder Presentations.</p>
+                <p id="download"><a href="doc/Christopher-Ritter_Resume_051015.docx">Download Resume</a> &amp; <a href="doc/Christopher-Ritter_UX-Portfolio.pdf">UX Portfolio</a></p>
+                <ul id="channels" class="clearfix">
+                    <lh>Social Media Channels</lh>
+                    <li id="linkedin"><a href="https://www.linkedin.com/in/christopherritter" target="_blank">LinkedIn</a></li>
+                    <li id="pinterest"><a href="https://www.pinterest.com/chrisritter/" target="_blank">Pinterest</a></li>
+                    <li id="twitter"><a href="https://twitter.com/geddon" target="_blank">Twitter</a></li>
+                    <li id="facebook"><a href="https://www.facebook.com/christopherritter" target="_blank">Facebook</a></li>
+                </ul>
+                <section id="process">
+                    <h2>The 5D Process</h2>
+                    <p>Several years ago, while working at Bridge Worldwide, I discovered a process for web and application development known as the <span class="bold">5D Process</span>. It is composed of five distinct phases which are iterative in nature, and scalable enough to account for the large enterprises.</p>
+                </section>
+                <section id="discover" class="phase">
+                    <h3>D.1. Discover</h3>
+                    <p><span class="bold">The Discovery Phase</span> is an investigation into the subject matter. Typically this includes a deep dive into existing data, preferably involving key stakeholders from across the organization. The goal of this phase is to not simply find information, but more importantly to discover the patterns which connect the points of data.</p>
+                </section>
+                <section id="define" class="phase">
+                    <h3>D.2. Define</h3>
+                    <p><span class="bold">The Definition Phase</span> documents the patterns which were identified in the discovery phase. Whiteboard sketches are transformed into workflows and wireframes that define the user experience. The output of this phase provides the documentation necessary to get each stakeholder working off the same set of instructions.</p>
+                </section>
+                <section id="design" class="phase">
+                    <h3>D.3. Design</h3>
+                    <p><span class="bold">The Design Phase</span> builds on top of the framework which was documented in the definition phase. This framework acts much like the bones upon which the muscles, skin, and other layers are applied. The end result being a somewhat lifelike prototype which enables stakeholders to get a feel for the end result.</p>
+                </section>
+                <section id="develop" class="phase">
+                    <h3>D.4. Develop</h3>
+                    <p><span class="bold">The Development Phase</span> takes the prototype from the design phase and brings it to life. While traditionally this is accomplished through code, it is also possible to breathe life into designs using specializing applications. The goal of this phase is to deliver the package which contains the final solution.</p>
+                </section>
+                <section id="deploy" class="phase">
+                    <h3>D.5. Deploy</h3>
+                    <p><span class="bold">The Deployment Phase</span> distributes the package which was delivered in the development phase. This interaction with the customer provides key opportunities to learn more about them and their reaction to the product. A summary of the feedback is delivered to key stakeholders to help inform the next iteration.</p>
+                </section>
+            </div>
         </article>
+        
         <aside id="thoughts" class="clearfix">
             <img id="head" src="img/head.svg" class="image" />
             <img id="thoughtsL" src="img/thoughtsL.svg" class="image" />
             <img id="thoughtsR" src="img/thoughtsR.svg" class="image" />
         </aside>
+        
         <aside id="parallax" class="clearfix">
             <img id="parallax1L" src="img/parallax1L.svg" class="image" />
             <img id="parallax2L" src="img/parallax2L.svg" class="image" />
             <img id="parallax1R" src="img/parallax1R.svg" class="image" />
             <img id="parallax2R" src="img/parallax2R.svg" class="image" />
         </aside>
-    </main>
+        
+        <footer class="clearfix">
+            <section id="contact" class="clearfix">
+                <p><span class="nobr">Got a question&#x3f;</span> <span class="nobr">Send me an email&#x21;</span><br /><a href="mailto:chris@christopherritter.com">chris &#x40; christopherritter.com</a></p>
+            </section>
+            <section id="separator" class="clearfix">
+                <div id="line" class="clearfix">
+                </div>
+            </section>
+            <section id="socialmedia" class="clearfix">
+                <p><span class="nobr">Connect with me</span> <span class="nobr">on social media&#x3a;</span></p>
+                <div id="logos" class="clearfix">
+                    <a href="https://www.linkedin.com/in/christopherritter" target="_blank"><img class="thumbnail" src="img/linkedin.svg" class="image" /></a>
+                    <a href="https://www.pinterest.com/chrisritter/" target="_blank"><img class="thumbnail" src="img/pinterest.svg" class="image" /></a>
+                    <a href="https://twitter.com/geddon" target="_blank"><img class="thumbnail" src="img/twitter.svg" class="image" /></a>
+                    <a href="https://www.facebook.com/christopherritter" target="_blank"><img class="thumbnail" src="img/facebook.svg" class="image" /></a>
+                </div>
+            </section>
+            <section id="copyright" class="clearfix">
+                <p>&copy; Christopher Ritter 2015. All rights reserved.</p>
+            </section>
+        </footer>
+        
+        </main>
+        
     </body>
 </html>
