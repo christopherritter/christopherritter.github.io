@@ -1,536 +1,484 @@
+.primary-font {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.secondary-font {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.small-icon {
+  width: 24px;
+  height: 24px;
+  list-style-type: none;
+}
 body {
-    background-color: rgb(218, 215, 198);
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.2em;
-    line-height: 1.4em;
+  background-color: #dad7c6;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
 }
-
 .primaryContainer {
-    margin: 0px;
-    min-height: 100%;
-    min-width: 100%;
-    padding: 0px;
+  margin: 0px;
+  min-height: 100%;
+  min-width: 100%;
+  padding: 0px;
 }
-
 article {
-    float: left;
-    height: auto;
-    margin: 0px;
-    clear: none;
-    width: 50%;
-    min-height: 100%;
-    min-width: 480px;
-    max-width: none;
-    display: block;
+  float: left;
+  height: auto;
+  margin: 0px;
+  clear: none;
+  width: 50%;
+  min-height: 100%;
+  min-width: 480px;
+  max-width: none;
+  display: block;
 }
-
 #overlay {
-    float: left;
-    height: auto;
-    width: auto;
-    background-color: rgba(255, 255, 255, 0.901961);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    z-index: 20;
-    clear: none;
-    display: block;
-    padding: 24px;
-    margin: 40px;
-    min-width: 0px;
+  float: left;
+  height: auto;
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 20;
+  clear: none;
+  display: block;
+  padding: 24px;
+  margin: 40px;
+  min-width: 0px;
 }
-
 #headline {
-    font-size: 4.5em;
-    font-weight: normal;
-    line-height: 1em;
-    color: rgb(35, 31, 32);
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    position: relative;
-    margin: 0;
-    padding: 0;
+  font-size: 4.5em;
+  font-weight: normal;
+  line-height: 1em;
+  color: #231f20;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
-
 #byline {
-    font-size: 3em;
-    font-weight: bold;
-    line-height: normal;
-    color: rgb(194, 80, 71);
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    position: relative;
-    margin: 0 0 24px;
-    padding: 0;
+  font-size: 3em;
+  font-weight: bold;
+  line-height: normal;
+  color: #c25047;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  position: relative;
+  margin: 0 0 24px;
+  padding: 0;
 }
-
 #divider {
-    display: block;
-    width: 45%;
-    height: auto;
-    clear: both;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 24px;
+  display: block;
+  width: 45%;
+  height: auto;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
 }
-
 #biography {
-    width: 100%;
-    margin: 0px 0px 12px;
-    padding: 0px;
+  width: 100%;
+  margin: 0px 0px 12px;
+  padding: 0px;
 }
-
 #biography p {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
-
 #biography p span.bold {
-    font-weight: 700;
+  font-weight: 700;
 }
-
 .bold {
-    color: rgb(35, 31, 32);
-    font-weight: bold;
+  color: #231f20;
+  font-weight: bold;
 }
-
 .nobr {
-    white-space: nowrap;
+  white-space: nowrap;
 }
-
 #download {
-    text-align: center;
-    margin-bottom: 24px;
-    font-size: 2.25em;
-    line-height: normal;
-    color: rgb(189, 184, 165);
-    text-decoration: none;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 2.25em;
+  line-height: normal;
+  color: #bdb8a5;
+  text-decoration: none;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-
 #download a {
-    color: rgb(121, 158, 164);
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    white-space: nowrap;
+  color: #799ea4;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  white-space: nowrap;
 }
-
 #download a:hover {
-    color: rgb(194, 80, 71);
+  color: #c25047;
 }
-
 #channels {
-    height: 106px;
-    box-sizing: border-box;
-    width: 100%;
-    background-color: rgb(189, 184, 165);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    margin: 0 0 24px;
-    padding: 12px;
+  height: 106px;
+  box-sizing: border-box;
+  width: 100%;
+  color: #bdb8a5;
+  border-radius: 5px;
+  margin: 0 0 24px;
+  padding: 12px;
 }
-
 #channels lh {
-    width: 100%;
-    float: left;
-    clear: both;
-    font-size: .8em;
-    line-height: 2.6em;
-    font-weight: bold;
-    margin-top: -10px;
-    text-transform: uppercase;
+  width: 100%;
+  float: left;
+  clear: both;
+  font-size: .8em;
+  line-height: 2.6em;
+  font-weight: bold;
+  margin-top: -10px;
+  text-transform: uppercase;
 }
-
 #channels li {
-    float: left;
-    width: 40%;
-    line-height: 24px;
-    margin-bottom: 6px;
-    padding-left: 32px;
-    font-weight: 700;
+  float: left;
+  width: 40%;
+  line-height: 24px;
+  margin-bottom: 6px;
+  padding-left: 32px;
+  font-weight: 700;
 }
-
 #channels li :hover {
-    color: rgb(194, 80, 71);
+  color: #c25047;
 }
-
 #linkedin {
-    width: 24px;
-    height: 24px;
-    background: url('../img/linkedin.svg') no-repeat 0px 0px transparent;
-    list-style-type: none;
+  background: url('../img/linkedin.svg') no-repeat 0px 0px transparent;
+  width: 24px;
+  height: 24px;
+  list-style-type: none;
 }
-
 #twitter {
-    width: 24px;
-    height: 24px;
-    background: url('../img/twitter.svg') no-repeat 0px 0px transparent;
-    list-style-type: none;
+  background: url('../img/twitter.svg') no-repeat 0px 0px transparent;
+  width: 24px;
+  height: 24px;
+  list-style-type: none;
 }
-
 #pinterest {
-    width: 24px;
-    height: 24px;
-    background: url('../img/pinterest.svg') no-repeat 0px 0px transparent;
-    list-style-type: none;
+  background: url('../img/pinterest.svg') no-repeat 0px 0px transparent;
+  width: 24px;
+  height: 24px;
+  list-style-type: none;
 }
-
 #facebook {
-    width: 24px;
-    height: 24px;
-    background: url('../img/facebook.svg') no-repeat 0px 0px transparent;
-    list-style-type: none;
+  background: url('../img/facebook.svg') no-repeat 0px 0px transparent;
+  width: 24px;
+  height: 24px;
+  list-style-type: none;
 }
-
 #process h2 {
-    font-size: 3em;
-    font-weight: bold;
-    line-height: normal;
-    color: rgb(194, 80, 71);
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    position: relative;
-    margin: 0 0 12px;
-    padding: 0;
+  font-size: 3em;
+  font-weight: bold;
+  line-height: normal;
+  color: #c25047;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  position: relative;
+  margin: 0 0 12px;
+  padding: 0;
 }
-
 .phase h3 {
-    font-size: 2em;
-    font-weight: bold;
-    line-height: normal;
-    color: rgb(194, 80, 71);
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    position: relative;
-    margin: 0 0 12px;
-    padding: 0;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: normal;
+  color: #c25047;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  position: relative;
+  margin: 0 0 12px;
+  padding: 0;
 }
-
-#process p:last-child, .phase p:last-child {
-    margin-bottom: 24px;
+#process p:last-child,
+.phase p:last-child {
+  margin-bottom: 24px;
 }
-
 #head {
-    float: left;
-    width: auto;
-    max-width: none;
-    height: 80%;
-    color: rgb(0, 0, 0);
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    z-index: 11;
-    clear: none;
-    display: block;
-    padding: 0px;
-    min-width: 0px;
-    min-height: 0px;
-    max-height: none;
-    bottom: auto;
-    right: auto;
+  float: left;
+  width: auto;
+  max-width: none;
+  height: 80%;
+  color: #231f20;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  z-index: 11;
+  clear: none;
+  display: block;
+  padding: 0px;
+  min-width: 0px;
+  min-height: 0px;
+  max-height: none;
+  bottom: auto;
+  right: auto;
 }
-
 #thoughts {
-    float: left;
-    height: auto;
-    clear: right;
-    width: auto;
-    min-height: 100%;
-    position: fixed;
-    top: 0px;
-    left: 480px;
-    min-width: 60%;
-    display: block;
-    z-index: 10;
-    right: -2%;
+  float: left;
+  height: auto;
+  clear: right;
+  width: auto;
+  min-height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 480px;
+  min-width: 60%;
+  display: block;
+  z-index: 10;
+  right: -2%;
 }
-
 #thoughtsL {
-    float: left;
-    width: auto;
-    max-width: none;
-    height: 90%;
-    color: rgb(0, 0, 0);
-    position: fixed;
-    z-index: 12;
-    clear: none;
-    display: block;
-    padding-left: 0px;
-    top: 2%;
-    left: 34%;
-    bottom: auto;
-    min-height: 0px;
+  float: left;
+  width: auto;
+  max-width: none;
+  height: 90%;
+  color: #000000;
+  position: fixed;
+  z-index: 12;
+  clear: none;
+  display: block;
+  padding-left: 0px;
+  top: 2%;
+  left: 34%;
+  bottom: auto;
+  min-height: 0px;
 }
-
 #thoughtsR {
-    float: left;
-    width: auto;
-    max-width: none;
-    height: 90%;
-    color: rgb(0, 0, 0);
-    position: fixed;
-    top: 2%;
-    left: 78%;
-    z-index: 12;
-    clear: none;
-    display: block;
-    bottom: auto;
-    min-height: 0px;
+  float: left;
+  width: auto;
+  max-width: none;
+  height: 90%;
+  color: #000000;
+  position: fixed;
+  top: 2%;
+  left: 78%;
+  z-index: 12;
+  clear: none;
+  display: block;
+  bottom: auto;
+  min-height: 0px;
 }
-
 #parallax {
-    float: left;
-    height: auto;
-    clear: none;
-    width: auto;
-    min-width: 100%;
-    min-height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-    display: block;
-    overflow: hidden;
+  float: left;
+  height: auto;
+  clear: none;
+  width: auto;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  display: block;
+  overflow: hidden;
 }
-
 #parallax1L {
-    float: left;
-    width: 50%;
-    max-width: none;
-    height: auto;
-    color: rgb(0, 0, 0);
-    position: fixed;
-    top: -145px;
-    left: 26%;
-    z-index: 3;
-    clear: right;
-    display: block;
-    right: auto;
-    bottom: auto;
+  float: left;
+  width: 50%;
+  max-width: none;
+  height: auto;
+  color: #000000;
+  position: fixed;
+  top: -145px;
+  left: 26%;
+  z-index: 3;
+  clear: right;
+  display: block;
+  right: auto;
+  bottom: auto;
 }
-
 #parallax1R {
-    float: left;
-    width: 25%;
-    max-width: none;
-    height: auto;
-    color: rgb(0, 0, 0);
-    position: fixed;
-    top: -145px;
-    left: auto;
-    z-index: 3;
-    clear: none;
-    display: block;
-    bottom: auto;
-    right: 0px;
+  float: left;
+  width: 25%;
+  max-width: none;
+  height: auto;
+  color: #000000;
+  position: fixed;
+  top: -145px;
+  left: auto;
+  z-index: 3;
+  clear: none;
+  display: block;
+  bottom: auto;
+  right: 0px;
 }
-
 #parallax2L {
-    float: left;
-    width: 50%;
-    max-width: none;
-    height: auto;
-    clear: none;
-    color: rgb(0, 0, 0);
-    position: fixed;
-    top: -48px;
-    left: -160px;
-    z-index: 2;
-    right: auto;
-    display: block;
-    bottom: auto;
+  float: left;
+  width: 50%;
+  max-width: none;
+  height: auto;
+  clear: none;
+  color: #000000;
+  position: fixed;
+  top: -48px;
+  left: -160px;
+  z-index: 2;
+  right: auto;
+  display: block;
+  bottom: auto;
 }
-
 #parallax2R {
-    float: left;
-    width: 50%;
-    max-width: none;
-    height: auto;
-    clear: none;
-    color: rgb(0, 0, 0);
-    position: fixed;
-    top: -100px;
-    left: auto;
-    bottom: auto;
-    right: -300px;
-    z-index: 2;
+  float: left;
+  width: 50%;
+  max-width: none;
+  height: auto;
+  clear: none;
+  color: #000000;
+  position: fixed;
+  top: -100px;
+  left: auto;
+  bottom: auto;
+  right: -300px;
+  z-index: 2;
 }
-
 footer {
-    float: left;
-    height: 400px;
-    margin: 0px;
-    clear: none;
-    width: 100%;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    min-width: 0px;
-    background-color: rgba(121, 158, 164, 0.9);
-    z-index: 15;
+  float: left;
+  height: 400px;
+  margin: 0px;
+  clear: none;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  min-width: 0px;
+  background-color: rgba(121, 158, 164, 0.9);
+  z-index: 15;
 }
-
-#contact, #socialmedia {
-    float: left;
-    height: 330px;
-    clear: none;
-    width: 48%;
-    box-sizing: border-box;
+#contact,
+#socialmedia {
+  float: left;
+  height: 330px;
+  clear: none;
+  width: 48%;
+  box-sizing: border-box;
 }
-
 #contact a {
-    color: black;
+  color: black;
 }
-
 #contact a:hover {
-    color: rgb(194, 80, 71);
+  color: #c25047;
 }
-
 #separator {
-    float: left;
-    height: 330px;
-    margin: 0px;
-    clear: none;
-    width: 4%;
+  float: left;
+  height: 330px;
+  margin: 0px;
+  clear: none;
+  width: 4%;
 }
-
 .thumbnail {
-    width: 48px;
-    height: 48px;
-    float: left;
-    margin-right: 12px;
+  width: 48px;
+  height: 48px;
+  float: left;
+  margin-right: 12px;
 }
-
-#contact p, #socialmedia p {
-    font-size: 2.25em;
-    width: 100%;
-    text-align: center;
-    font-weight: normal;
-    line-height: 1em;
-    font-family: 'Yanone Kaffeesatz';
-    color: rgba(255, 255, 255, 0.9);
-    margin-top: 92px;
+#contact p,
+#socialmedia p {
+  font-size: 2.25em;
+  width: 100%;
+  text-align: center;
+  font-weight: normal;
+  line-height: 1em;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 92px;
 }
-
 #copyright {
+  float: left;
+  height: 70px;
+  margin: 0px;
+  clear: both;
+  width: 100%;
+  background-color: #231f20;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+#copyright p {
+  width: 100%;
+  color: #f8f8ff;
+  margin-top: 22px;
+  text-align: center;
+}
+#logos {
+  margin: 12px auto;
+  width: 240px;
+}
+#line {
+  height: 224px;
+  margin-left: 50%;
+  margin-top: 60px;
+  width: 1px;
+  background-color: rgba(35, 31, 32, 0.3);
+}
+@media only screen and (max-width: 1080px) {
+  #parallax1L {
+    left: 26%;
+    right: auto;
+  }
+  #copyright {
     float: left;
     height: 70px;
     margin: 0px;
     clear: both;
     width: 100%;
-    background-color: rgb(35, 31, 32);
+    background-color: #231f20;
     position: relative;
     top: 0px;
     left: 0px;
+    bottom: auto;
+  }
+  #contact {
+    float: left;
+    height: 330px;
+    margin: 0px;
+    clear: none;
+    width: 48%;
+  }
+  #separator {
+    float: left;
+    height: 330px;
+    margin: 0px;
+    clear: none;
+    width: 4%;
+  }
+  #socialmedia {
+    float: left;
+    height: 330px;
+    margin: 0px;
+    clear: none;
+    width: 48%;
+  }
 }
-
-#copyright p {
-    width: 100%;
-    color: ghostwhite;
-    margin-top: 22px;
-    text-align: center;
-}
-
-#logos {
-    margin: 12px auto;
-    width: 240px;
-}
-
-#line {
-    height: 224px;
-    margin-left: 50%;
-    margin-top: 60px;
-    width: 1px;
-    background-color: rgba(35, 31, 32, 0.3);
-}
-
-@media only screen and (max-width: 1080px) {
-    #parallax1L {
-        left: 26%;
-        right: auto;
-    }
-
-    #copyright {
-        float: left;
-        height: 70px;
-        margin: 0px;
-        clear: both;
-        width: 100%;
-        background-color: rgb(35, 31, 32);
-        position: relative;
-        top: 0px;
-        left: 0px;
-        bottom: auto;
-    }
-
-    #contact {
-        float: left;
-        height: 330px;
-        margin: 0px;
-        clear: none;
-        width: 48%;
-    }
-
-    #separator {
-        float: left;
-        height: 330px;
-        margin: 0px;
-        clear: none;
-        width: 4%;
-    }
-
-    #socialmedia {
-        float: left;
-        height: 330px;
-        margin: 0px;
-        clear: none;
-        width: 48%;
-    }
-}
-
 @media only screen and (max-width: 720px) {
-    #contact {
-        width: 100%;
-        height: 198px;
-    }
-
-    #contact p {
-        margin: 60px 0px 0px;
-    }
-
-    #separator {
-        width: 100%;
-        height: 4px;
-    }
-    
-    #line {
-        height: 1px;
-        margin: 0 auto;
-        margin-top: 2px;
-        width: 90%;
-    }
-
-    #socialmedia {
-        width: 100%;
-        height: 198px;
-    }
-
-    #socialmedia p {
-        margin: 50px 0px 12px;
-    }
+  #contact {
+    width: 100%;
+    height: 198px;
+  }
+  #contact p {
+    margin: 60px 0px 0px;
+  }
+  #separator {
+    width: 100%;
+    height: 4px;
+  }
+  #line {
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 2px;
+    width: 90%;
+  }
+  #socialmedia {
+    width: 100%;
+    height: 198px;
+  }
+  #socialmedia p {
+    margin: 50px 0px 12px;
+  }
 }
-
 @media only screen and (max-width: 480px) {
-    #thoughtsR {
-        display: none;
-    }
-
-    #socialmedia p {
-        margin-top: 50px;
-    }
-
-    #contact p {
-        margin-top: 60px;
-    }
+  #thoughtsR {
+    display: none;
+  }
+  #socialmedia p {
+    margin-top: 50px;
+  }
+  #contact p {
+    margin-top: 60px;
+  }
 }
-
